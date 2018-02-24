@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   #
   #
   get 'welcome/index'
+  get 'home' => 'home#index'
   root 'welcome#index'
 end
