@@ -12,6 +12,54 @@
  *
  //*= require_tree .
  //*= require_self
- *= require metismenu/dist/metisMenu.min.css
+ *= require metismenu/dist/metisMenu.css
  */
 @import "bootstrap";
+
+/*
+ * Component: Sidebar
+ * ------------------
+ */
+.main-sidebar,
+.left-side {
+  width: 230px;
+  position: fixed;
+  background-color: #212529;
+  padding-top: 55px;
+  min-height: 100%;
+  z-index: 810;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out, width 0.3s ease-in-out;
+  -moz-transition: -moz-transform 0.3s ease-in-out, width 0.3s ease-in-out;
+  -o-transition: -o-transform 0.3s ease-in-out, width 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+.content{
+  padding-top: 55px;
+}
+@media (max-width: 767px) {
+  .main-sidebar,
+  .left-side {
+    -webkit-transform: translate(-230px, 0);
+    -ms-transform: translate(-230px, 0);
+    -o-transform: translate(-230px, 0);
+    transform: translate(-230px, 0);
+  }
+}
+//@media (min-width: 768px) {
+//  .sidebar-collapse .main-sidebar,
+//  .sidebar-collapse .left-side {
+//    -webkit-transform: translate(-230px, 0);
+//    -ms-transform: translate(-230px, 0);
+//    -o-transform: translate(-230px, 0);
+//    transform: translate(-230px, 0);
+//  }
+//}
+//@media (max-width: 767px) {
+//  .sidebar-open .main-sidebar,
+//  .sidebar-open .left-side {
+//    -webkit-transform: translate(0, 0);
+//    -ms-transform: translate(0, 0);
+//    -o-transform: translate(0, 0);
+//    transform: translate(0, 0);
+//  }
+//}
