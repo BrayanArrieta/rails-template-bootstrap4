@@ -1,5 +1,7 @@
 {
   "name": "rails-template-bootstrap4",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "metismenu": "^2.7.4"
+  }
 }
