@@ -17,11 +17,17 @@
     <tbody>
     <% @users.each do |user| %>
       <tr>
-        <th><%= user.id %></th>
-        <th><%= user.name %></th>
-        <th><%= user.surnames %></th>
-        <th><%= user.email %></th>
-        <th></th>
+        <td><%= user.id %></td>
+        <td><%= user.name %></td>
+        <td><%= user.surnames %></td>
+        <td><%= user.email %></td>
+        <td>
+          <div class="btn-group" role="group" >
+            <%= link_to 'Show',user_path(user),:class => 'btn btn-success' %>
+            <%= link_to 'Edit',edit_user_path(user),:class => 'btn btn-primary' %>
+            <button type="button" class="btn btn-secondary">Right</button>
+          </div>
+        </td>
       </tr>
     <% end %>
     </tbody>
