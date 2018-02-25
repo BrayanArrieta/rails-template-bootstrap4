@@ -1,0 +1,7 @@
+<h3>Hello <%= @user.email %> !</h3>
+<p>Recently you requested a link to access your account,
+  if you were you follow the link below, otherwise ignore the message.</p>
+
+<p>
+  <%= link_to 'Enter to my account',email_link_validate_path(token: @token) %>
+</p>
