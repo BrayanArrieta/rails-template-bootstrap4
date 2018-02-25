@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   #
   get 'email_link/new'
   post 'email_link/create'
+  get 'email_link/validate'
   resources :users
   root 'home#index'
 end

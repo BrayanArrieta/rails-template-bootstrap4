@@ -1,7 +1,10 @@
-<h1>Enter to your account with a link in email</h1>
-<%= form_with url: email_link_create_path, method: :post do |form| %>
-  <div class="form-group">
-    <input type="email" name="email" placeholder="Please enter your email address" class="form-control">
-    <input type="submit" value="Generate link" class="btn btn-info">
-  </div>
-<% end %>
+<div class="container">
+  <h1>Enter to your account with a link in your email address</h1>
+  <%= form_with url: email_link_create_path, method: :post do |form| %>
+    <div class="form-group">
+      <input type="email" name="email" placeholder="Please enter your email address" class="form-control">
+      <input type="submit" value="Generate link" class="btn btn-info">
+    </div>
+  <% end %>
+</div>
+
