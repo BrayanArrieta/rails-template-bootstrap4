@@ -1,67 +1,29 @@
-<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores cupiditate eius nihil tempore? A
-  architecto aspernatur corporis cupiditate eius esse harum ipsam itaque minus officiis repellendus rerum, sequi unde.
-</div>
-<div>Accusamus architecto aspernatur commodi cupiditate deleniti distinctio enim eos eum excepturi explicabo fuga
-  itaque, nemo perferendis, quam quibusdam quidem, vitae? Ab blanditiis quae quam quis reiciendis rerum sed sit tempora.
-</div>
-<div>A animi culpa eos id inventore labore, minus? Animi ea eius explicabo facilis illo nesciunt nobis sed sequi!
-  Expedita inventore numquam odio, praesentium quia reprehenderit sapiente sunt. Molestiae, possimus reiciendis!
-</div>
-<div>Accusamus cumque, dolorum eum expedita harum incidunt ipsa, natus necessitatibus provident quaerat quis quisquam
-  reiciendis rem repellat veritatis! Dignissimos dolorum eaque eligendi illum minima praesentium qui quos, sint sunt.
-  Veritatis.
-</div>
-<div>Adipisci consequuntur doloribus ducimus illo impedit inventore obcaecati reprehenderit sapiente veniam. Ab, ad amet
-  animi cumque, ea earum excepturi id laudantium nam necessitatibus, officia quo reiciendis rerum temporibus tenetur
-  ullam.
-</div>
-<div>Aliquid assumenda commodi doloremque dolorum inventore laudantium natus neque, non omnis praesentium quia quo
-  ratione repellat similique sint tempora ullam vel voluptatibus. Consequatur, cum eum in mollitia omnis quidem tempore!
-</div>
-<div>Accusamus amet aspernatur sit unde? Amet aperiam, asperiores debitis dolores ea eligendi eos est facere harum illum
-  iste labore, maxime nesciunt nobis, nostrum perferendis placeat praesentium tempora tempore voluptas! Suscipit.
-</div>
-<div>Accusamus aliquam deleniti, dignissimos dolore eius est exercitationem fugit in maxime natus non perferendis
-  quibusdam quis quos ratione recusandae repellendus soluta unde veritatis voluptas? Alias eius eveniet magni quam quas.
-</div>
-<div>Ducimus eligendi necessitatibus quis. Eligendi exercitationem minima pariatur porro praesentium repudiandae
-  sapiente ut veniam! Aliquid assumenda cupiditate, dolores eligendi eum facere incidunt itaque natus necessitatibus
-  nihil obcaecati pariatur quos sit!
-</div>
-<div>Accusantium ad beatae, consectetur, consequatur dolor error et excepturi incidunt itaque magni minus molestias
-  mollitia nulla, numquam odio optio pariatur quis reiciendis repellat sapiente similique totam unde veritatis! A, id?
-</div>
-<div>Consequuntur dicta dolor incidunt iusto nesciunt nihil quisquam, voluptatum! Alias at beatae, consequatur corporis
-  dolore et explicabo incidunt modi necessitatibus officiis placeat possimus provident quia quis quod quos sed sit.
-</div>
-<div>Accusamus doloribus enim fugit, id, iure magni maiores minima officia quisquam quo repellat reprehenderit sit
-  voluptatum! Dolorem ea, eos est labore laboriosam, molestiae mollitia, nesciunt numquam rerum soluta ut voluptate.
-</div>
-<div>Culpa deleniti eligendi est harum iure, iusto magnam magni maiores minus necessitatibus quisquam sapiente sint
-  voluptas. Dolor esse exercitationem expedita harum, iure magni molestias necessitatibus praesentium ratione sapiente
-  tempore, vel?
-</div>
-<div>Ab, adipisci aliquam aut, cumque deleniti distinctio dolor doloremque dolores eius et eveniet fugiat iste iure
-  numquam porro possimus quae quas quasi, quibusdam quos similique temporibus totam ullam vel voluptatum.
-</div>
-<div>Ab adipisci aliquam aperiam corporis distinctio dolore doloremque ea eius eos eveniet facere illo, impedit labore
-  laboriosam maiores, nemo nulla odit pariatur placeat quisquam, reprehenderit sed sit unde vitae voluptatem?
-</div>
-<div>Doloremque itaque, obcaecati? Architecto dolores eveniet mollitia, odio porro repudiandae sapiente velit.
-  Aspernatur at eligendi hic iste itaque iure maiores quas quo. Cupiditate dicta doloremque id, inventore maxime
-  repellendus soluta!
-</div>
-<div>Blanditiis debitis dolorem dolores, ea eum ex hic molestias nam nesciunt nihil nostrum odio praesentium quas
-  quibusdam quidem quis quisquam quos saepe! Blanditiis illo nemo sint, sit suscipit tempora vel!
-</div>
-<div>Architecto dignissimos doloremque dolores eveniet ipsam, libero molestiae necessitatibus numquam odio omnis rem
-  sapiente similique suscipit. Accusamus dolor doloribus, est explicabo facere ipsa, mollitia nisi optio repellat sed
-  similique voluptates?
-</div>
-<div>Accusantium asperiores assumenda commodi doloremque ea id quam similique sit velit veniam? Aut autem doloribus et
-  ex incidunt, iste, laboriosam minus possimus provident quibusdam recusandae repudiandae voluptatibus! Est nihil, non.
-</div>
-<div>Aliquid corporis est minima numquam suscipit totam, voluptas! Beatae consequatur deserunt facilis, quidem rerum
-  sit! At consectetur cupiditate, distinctio exercitationem explicabo impedit itaque minus nisi, non quasi reiciendis
-  tempore, voluptatibus.
+
+
+
+<h1>List of Users</h1>
+<div class="table-responsive">
+
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Surnames</th>
+      <th scope="col">Email</th>
+      <th scope="col">Operations</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <th><%= user.id %></th>
+        <th><%= user.name %></th>
+        <th><%= user.surnames %></th>
+        <th><%= user.email %></th>
+        <th></th>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
 </div>
