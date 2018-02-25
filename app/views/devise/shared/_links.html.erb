@@ -1,4 +1,6 @@
-<%= link_to 'Login to your account via a link', email_link_new_path%><br />
+<%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+  <%= link_to 'Login to your account via a link', email_link_new_path%><br />
+<% end -%>
 
 <%- if controller_name != 'sessions' %>
   <%= link_to "Log in", new_session_path(resource_name) %><br />
