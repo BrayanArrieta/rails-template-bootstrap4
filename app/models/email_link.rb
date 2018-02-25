@@ -5,7 +5,7 @@ class EmailLink < ApplicationRecord
   def self.generate(email)
     user = User.find_by_email(email)
     if user
-      create(user: user, expires_at: Date.today + 1.day, token: generate_token)
+      create(user: user, expires_at: DateTime.now + 12.hours, token: generate_token)
     else
       return nil
     end
