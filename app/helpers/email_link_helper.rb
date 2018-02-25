@@ -1,0 +1,2 @@
+module EmailLinkHelper
+end
