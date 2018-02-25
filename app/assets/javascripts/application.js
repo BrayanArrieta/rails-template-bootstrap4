@@ -17,3 +17,11 @@
 //= require popper
 //= require bootstrap-sprockets
 //= require metismenu/dist/metisMenu.min.js
+
+
+// document.addEventListener('turbolinks:request-start',function () {
+//     document.querySelector('.content').classList.add('fadeOut');
+// });
+// document.addEventListener('turbolinks:render',function () {
+//     document.querySelector('.content').classList.add('fadeIn');
+// });
